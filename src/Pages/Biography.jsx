@@ -4,7 +4,7 @@ function Biography() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <div className="w-full flex items-left justify-center pl-4 md:pl-[2vw] text-[12vw] md:text-[9vw] font-bold flex-col h-[50vh] md:h-[75vh]">
+        <div className="w-full flex pt-10 items-left justify-center pl-4 md:pl-[2vw] text-[12vw] md:text-[9vw] font-bold flex-col h-[50vh] md:h-[75vh]">
         <p>KAY VAN HANS,</p>
         <p className="relative bottom-4 md:bottom-9">BORN IN 1980</p>
       </div>

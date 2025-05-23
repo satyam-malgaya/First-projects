@@ -7,7 +7,7 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className='w-full h-20 border-b border-zinc-700 px-4 md:px-10 flex items-center justify-between fixed top-0 bg-white z-50'>
+    <div className='w-full h-20  border-zinc-700 px-4 md:px-10 flex items-center justify-between fixed top-0 bg-white z-50'>
       <div>
         <p className='uppercase text-xl md:text-2xl'>@KAY.V.H</p>
       </div>
@@ -19,7 +19,7 @@ function Navbar() {
         <NavLink id='nav-link' className="nav-link text-sm md:text-base font-medium py-1 px-3.5 rounded-[12px] border-1" to="/Store">Store</NavLink>
         <NavLink id='nav-link' className="nav-link text-sm md:text-base font-medium py-1 px-3.5 rounded-[12px] border-1" to="/Biography">Biography</NavLink>
         <NavLink id='nav-link' className="nav-link text-sm md:text-base font-medium py-1 px-3.5 rounded-[12px] border-1" to="/Contcat">Contcat</NavLink>
-        <button className='border-1 py-1 px-3 bg-zinc-900 text-white rounded-[50px]'>0</button>
+        <NavLink id='nav-link' className='border-1 py-1 px-3 bg-zinc-900 text-white rounded-[50px]'>0</NavLink>
       </div>
 
       {/* Mobile Menu Button */}

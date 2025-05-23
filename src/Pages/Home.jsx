@@ -9,6 +9,7 @@ import con1 from "../assets/con-1.avif";
 import "../components/Navbar.css";
 
 function Home() {
+  const [openpop,setopenpop]= useState(false)
   const imges = [bg1, bg2, bg3];
   const [showfirst, setshowfirst] = useState(0);
   useEffect(() => {
@@ -22,13 +23,14 @@ function Home() {
   return (
     <div className="overflow-x-hidden">
       {/* Hero Section */}
-      <section id="home" className="w-full h-[50vh] md:h-[80vh] relative">
+      <section id="home" className="w-full h-[50vh] pt-5 md:h-[80vh] relative">
         <div className="flex flex-col text-[12vw] md:text-[13vw] py-10 px-4 md:px-10 font-bold">
           <h1>KAY VAN</h1>
         </div>
         <span className="absolute top-50 left-4 md:left-10 text-[12vw] md:text-[13vw] font-bold">
           HANS
         </span>
+
       </section>
 
       {/* About Section */}
@@ -58,14 +60,14 @@ function Home() {
         </p>
       </section>
 
-      {/* Gallery Section */}
+      {/* Gallery Section */}                                                                              
       <section id="gallery" className="w-full min-h-[170vh] justify-center items-center gap-5 py-10 flex flex-col md:flex-row">
         <div className="w-[90%] md:w-[35%] h-full">
           <div className="relative top-0 md:top-103 left-0 md:left-27">
             <img src={c1} className="w-full md:w-[75%] h-[60vh] md:h-[80vh] object-cover" alt="" />
-            <div className="flex justify-between md:gap-30 text-[4vw] md:text-[1.4vw] pt-5">
+            <div className="flex justify-between  md:gap-30 text-[4vw] md:text-[1.4vw] pt-5">
               <p>THIRTY THREE</p>
-              <button id="nav-link" className="py-1 px-3 border-1 uppercase rounded-xl">
+              <button id="nav-link" onClick={pophandler} className="py-1 px-3 realtive right-30 border-1 uppercase rounded-xl">
                 show
               </button>
             </div>
@@ -89,10 +91,10 @@ function Home() {
       </section>
 
       {/* Featured Section */}
-      <section id="featured" className="w-full min-h-[130vh] flex justify-center items-center">
+      <section id="featured" className="w-full min-h-[130vh] pt-60 flex justify-center items-center">
         <div className="w-[90%] md:w-[44%] h-[60vh] md:h-[95vh]">
           <img className="w-full h-full object-cover" src={con1} alt="" />
-          <div className="flex justify-between md:flex-row md:gap-65 text-[4vw] md:text-[1.3vw] pt-6">
+          <div className="flex justify-between md:flex-row md:gap-60 text-[4vw] md:text-[1.3vw] pt-6">
             <p>FRAGILE CONCRETE</p>
             <button id="nav-link" className="uppercase py-1 px-3 border-1 rounded-xl">
               show
@@ -102,7 +104,7 @@ function Home() {
       </section>
 
       {/* Buy Section */}
-      <section id="buy" className="w-full min-h-[40vh] md:min-h-[60vh]">
+      <section id="buy" className="w-full min-h-[40vh] relative top-50 md:min-h-[60vh]">
         <div className="w-full h-[50%]"></div>
         <div className="w-full h-[50%] flex items-center justify-center md:pl-[55.8rem]">
           <h1 className="text-[8vw] md:text-[7vw] font-bold uppercase">Buy</h1>

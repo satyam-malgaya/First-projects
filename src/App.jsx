@@ -9,7 +9,7 @@ import Contcat from "./Pages/Contcat"
 
 function App() {
   return (
-    <div>
+    <div id='mian'>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

@@ -5,7 +5,7 @@ function Store() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <div className="w-full min-h-[50vh] md:min-h-[90vh]">
+      <div className="w-full min-h-[50vh] pt-10 md:min-h-[90vh]">
         <div className="uppercase px-4 md:px-10 pt-10 text-[8vw] md:text-[9vw] font-bold">
           <p className="hover:text-zinc-700 transition-transform duration-3000 ease-in-out">BUY STUFF YOU</p>
           <p className="relative bottom-4">DON'T NEED</p>
